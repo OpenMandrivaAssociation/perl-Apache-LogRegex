@@ -1,15 +1,15 @@
 %define upstream_name	 Apache-LogRegex
-%define upstream_version 1.5
+%define upstream_version 1.52
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 1.52
+Release:	1
 
 Summary:	Perl module to parse a line from an Apache logfile into a hash
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Apache/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Apache/Apache-LogRegex-1.52.tar.gz
 
 BuildRequires:	perl-devel
 BuildArch:	noarch
@@ -80,4 +80,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Sat Jun 25 2005 Rafael Garcia-Suarez <rgarciasuarez@mandriva.com> 1.2-1mdk
 - First Mandriva release
+
 
