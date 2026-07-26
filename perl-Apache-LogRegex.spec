@@ -1,15 +1,13 @@
 %define upstream_name	 Apache-LogRegex
-%define upstream_version 1.71
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.71
+Release:	2
 
 Summary:	Perl module to parse a line from an Apache logfile into a hash
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/spacebat/perl-apache-logregex
-Source0:	https://cpan.metacpan.org/authors/id/S/SP/SPACEBAT/Apache-LogRegex-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/SP/SPACEBAT/Apache-LogRegex-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -19,7 +17,7 @@ BuildArch:	noarch
 This implements a simple Perl class to parse Apache log files.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -40,9 +38,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Fri Feb 12 2010 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 1.500.0-1mdv2011.0
 + Revision: 504565
-- rebuild using %%perl_convert_version
-
-* Mon Sep 14 2009 Thierry Vignaud <tv@mandriva.org> 1.5-2mdv2010.0
+- rebuild using %1.71 Mon Sep 14 2009 Thierry Vignaud <tv@mandriva.org> 1.5-2mdv2010.0
 + Revision: 440529
 - rebuild
 
