@@ -1,13 +1,14 @@
 %define upstream_name	 Apache-LogRegex
+%define upstream_version 1.71
 Name:		perl-%{upstream_name}
 Version:	1.71
-Release:	2
+Release:	1
 
 Summary:	Perl module to parse a line from an Apache logfile into a hash
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/spacebat/perl-apache-logregex
-Source0:	https://cpan.metacpan.org/authors/id/S/SP/SPACEBAT/Apache-LogRegex-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/SP/SPACEBAT/Apache-LogRegex-1.71.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
